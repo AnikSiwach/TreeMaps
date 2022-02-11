@@ -1,8 +1,6 @@
-from data import dataDict
-import pandas as pd
+import ssl
+import certifi
 
-
-df = df = pd.DataFrame(dataDict, index=[0])
-print(df)
+urlopen(request, context=ssl.create_default_context(cafile=certifi.where()))
 
 
